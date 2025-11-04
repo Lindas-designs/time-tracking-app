@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* COLOURS */
+  /* ### Primary */
+
+  --purple-600: hsl(246, 80%, 60%);
+  --orange-300-work: hsl(15, 100%, 70%);
+  --blue-300-play: hsl(195, 74%, 62%);
+  --pink-400-study: hsl(348, 100%, 68%);
+  --green-400-exercise: hsl(145, 58%, 55%);
+  --purple-700-social: hsl(264, 64%, 52%);
+  --yellow-300-self-care: hsl(43, 84%, 65%);
+
+  /* ### Neutral */
+
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --purple-500: hsl(235, 45%, 61%);
+  --navy-200: hsl(236, 100%, 87%);
+
+  /* - Font size: 18px (card titles e.g. Work, Play) */
+}
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+  /* - Weights: 300, 400, 500 */
+}
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/*
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+If you would like to practice working with JSON data, we provide a local `data.json` file for the activities. This means you'll be able to pull the data from there instead of using the content in the `.html` file.
+
+Your users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Switch between viewing Daily, Weekly, and Monthly stats
+
+### Expected behaviour
+
+- The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs".
+*/
+
+/*
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1.5rem;
+  max-width: 1000px;
+}
+
+.profile-card {
+  background-color: #1c1f4a;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info {
+  background-color: #5847eb;
+  padding: 2rem 1.5rem;
+  text-align: left;
+}
+
+.profile-info img {
+  border-radius: 50%;
+  width: 70px;
+  border: 3px solid white;
+  margin-bottom: 1rem;
+}
+
+.profile-info p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.profile-info h1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.timeframes {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.timeframes button {
+  background: none;
+  border: none;
+  color: #bdc1ff;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.timeframes button.active,
+.timeframes button:hover {
+  color: white;
+}
+*/
+/* Cards layout */
+/*
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-bg {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.card-bg img {
+  width: 50px;
+  opacity: 0.4;
+}
+
+.card-content {
+  background-color: #1c1f4a;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-top: -15px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h2 {
+  font-size: 1rem;
+}
+
+.card-body h3 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.card-body p {
+  color: #bdc1ff;
+  font-size: 0.9rem;
+}
+
+.card.work .card-bg { background-color: #ff8c66; }
+.card.play .card-bg { background-color: #56c2e6; }
+.card.study .card-bg { background-color: #ff5c7c; }
+.card.exercise .card-bg { background-color: #4acf81; }
+.card.social .card-bg { background-color: #7536d3; }
+.card.selfcare .card-bg { background-color: #f1c65b; }
+*/
