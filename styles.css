@@ -28,6 +28,62 @@ html {
   font-size: 62.5%;
   font-family: "Rubik", sans-serif;
   /* - Weights: 300, 400, 500 */
+  background-color: var(--navy-950);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.dashboard {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 90%;
+  height: 60%;
+}
+.user-card {
+  grid-row: span 2;
+  background-color: var(--navy-900);
+}
+.card {
+  background-color: var(--navy-900);
+  border-radius: 1.5rem;
+}
+.card-bg {
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-content {
+  border-radius: 1.5rem; /* give the main card the rounding */
+}
+
+.card-work .card-bg {
+  background-color: var(--orange-300-work);
+}
+.card-play .card-bg {
+  background-color: var(--blue-300-play);
+}
+.card-study .card-bg {
+  background-color: var(--pink-400-study);
+}
+.card-exercise .card-bg {
+  background-color: var(--green-400-exercise);
+}
+.card-social .card-bg {
+  background-color: var(--purple-700-social);
+}
+.card-self-care .card-bg {
+  background-color: var(--yellow-300-self-care);
 }
 .attribution {
   position: fixed;
@@ -40,157 +96,3 @@ html {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-/*
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-If you would like to practice working with JSON data, we provide a local `data.json` file for the activities. This means you'll be able to pull the data from there instead of using the content in the `.html` file.
-
-Your users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Switch between viewing Daily, Weekly, and Monthly stats
-
-### Expected behaviour
-
-- The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs".
-*/
-
-/*
-body {
-  font-family: 'Rubik', sans-serif;
-  background-color: #0f1424;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.dashboard {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 1.5rem;
-  max-width: 1000px;
-}
-
-.profile-card {
-  background-color: #1c1f4a;
-  border-radius: 15px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.profile-info {
-  background-color: #5847eb;
-  padding: 2rem 1.5rem;
-  text-align: left;
-}
-
-.profile-info img {
-  border-radius: 50%;
-  width: 70px;
-  border: 3px solid white;
-  margin-bottom: 1rem;
-}
-
-.profile-info p {
-  opacity: 0.7;
-  font-size: 0.9rem;
-}
-
-.profile-info h1 {
-  font-size: 1.5rem;
-  line-height: 1.2;
-}
-
-.timeframes {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.timeframes button {
-  background: none;
-  border: none;
-  color: #bdc1ff;
-  font-size: 1rem;
-  text-align: left;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.timeframes button.active,
-.timeframes button:hover {
-  color: white;
-}
-*/
-/* Cards layout */
-/*
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  position: relative;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.card-bg {
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 1rem;
-}
-
-.card-bg img {
-  width: 50px;
-  opacity: 0.4;
-}
-
-.card-content {
-  background-color: #1c1f4a;
-  padding: 1.5rem;
-  border-radius: 15px;
-  margin-top: -15px;
-  position: relative;
-  z-index: 1;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-header h2 {
-  font-size: 1rem;
-}
-
-.card-body h3 {
-  font-size: 2.5rem;
-  margin: 0.5rem 0;
-}
-
-.card-body p {
-  color: #bdc1ff;
-  font-size: 0.9rem;
-}
-
-.card.work .card-bg { background-color: #ff8c66; }
-.card.play .card-bg { background-color: #56c2e6; }
-.card.study .card-bg { background-color: #ff5c7c; }
-.card.exercise .card-bg { background-color: #4acf81; }
-.card.social .card-bg { background-color: #7536d3; }
-.card.selfcare .card-bg { background-color: #f1c65b; }
-*/
