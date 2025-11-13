@@ -53,6 +53,7 @@ html {
   background-color: var(--navy-900);
   border-radius: 1.5rem;
   overflow: hidden;
+  color: white;
 }
 .card-bg {
   width: 100%;
@@ -66,23 +67,56 @@ html {
 
 .card-content {
   border-radius: 1.5rem; /* give the main card the rounding */
+  background-color: var(--navy-900);
+  height: 100%;
+  padding: 3rem;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.card-header h2 {
+  font-weight: 500;
+}
+.card-header img {
+  width: 2rem;
+}
+.card-body {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.card-body h3 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+.card-body p {
+  color: var(--navy-200);
+  font-size: 1.2rem;
 }
 
+.card-work,
 .card-work .card-bg {
   background-color: var(--orange-300-work);
 }
+.card-play,
 .card-play .card-bg {
   background-color: var(--blue-300-play);
 }
+.card-study,
 .card-study .card-bg {
   background-color: var(--pink-400-study);
 }
+.card-exercise,
 .card-exercise .card-bg {
   background-color: var(--green-400-exercise);
 }
+.card-social,
 .card-social .card-bg {
   background-color: var(--purple-700-social);
 }
+.card-self-care,
 .card-self-care .card-bg {
   background-color: var(--yellow-300-self-care);
 }
