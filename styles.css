@@ -52,6 +52,7 @@ html {
 .card {
   background-color: var(--navy-900);
   border-radius: 1.5rem;
+  overflow: hidden;
 }
 .card-bg {
   width: 100%;
