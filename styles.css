@@ -48,6 +48,57 @@ html {
 .user-card {
   grid-row: span 2;
   background-color: var(--navy-900);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.user-card p {
+  font-size: 1.5rem;
+  color: var(--navy-200);
+  font-weight: 300;
+}
+.user-card h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: wheat;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.user-info {
+  background-color: var(--purple-600);
+  padding: 3rem;
+}
+.user-img {
+  width: 8rem;
+  border: 0.25rem solid white;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+.user-timeframes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1;
+  padding-left: 3rem;
+}
+.btn {
+  /* button takes up only content's width" */
+  width: fit-content;
+
+  font-size: 1.75rem;
+  background-color: var(--navy-900);
+  border: none;
+  /* outline: 1px solid white; */
+  color: var(--purple-500);
+  cursor: pointer;
+}
+.btn:hover {
+  color: var(--navy-200);
+}
+.btn:active {
+  transform: scale(0.95);
 }
 .card {
   background-color: var(--navy-900);
