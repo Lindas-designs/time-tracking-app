@@ -86,11 +86,9 @@ html {
 .btn {
   /* button takes up only content's width" */
   width: fit-content;
-
   font-size: 1.75rem;
   background-color: var(--navy-900);
   border: none;
-  outline: 1px solid white;
   color: var(--purple-500);
   cursor: pointer;
 }
