@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 :root {
   /* COLOURS */
   /* ### Primary */
@@ -21,8 +22,6 @@
   --navy-900: hsl(235, 46%, 20%);
   --purple-500: hsl(235, 45%, 61%);
   --navy-200: hsl(236, 100%, 87%);
-
-  /* - Font size: 18px (card titles e.g. Work, Play) */
 }
 html {
   font-size: 62.5%;
@@ -30,12 +29,15 @@ html {
   /* - Weights: 300, 400, 500 */
   background-color: var(--navy-950);
 }
+*:focus-visible {
+  box-shadow: 0 0 0 0.1rem var(--purple-600);
+}
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 .dashboard {
   display: grid;
@@ -43,7 +45,8 @@ html {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   width: 90%;
-  height: 60%;
+  height: auto;
+  overflow: scroll;
 }
 .user-card {
   grid-row: span 2;
@@ -58,7 +61,7 @@ html {
   color: var(--navy-200);
   font-weight: 300;
 }
-.user-card h1 {
+.user-name {
   font-size: 4rem;
   font-weight: 300;
   color: wheat;
@@ -91,6 +94,7 @@ html {
   border: none;
   color: var(--purple-500);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .btn:hover {
   color: var(--navy-200);

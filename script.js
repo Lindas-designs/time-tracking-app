@@ -64,11 +64,3 @@ function setupButtons() {
     }
   });
 }
-
-//TO DO:
-
-//Mobile design, media queries
-//Go through JS once more to remember stuff
-//Modify read me
-//Deploy to github, netlify
-//Upload
