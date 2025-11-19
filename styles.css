@@ -43,7 +43,7 @@ html {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
   width: 90%;
   height: auto;
   overflow: scroll;
@@ -172,12 +172,9 @@ html {
   background-color: var(--yellow-300-self-care);
 }
 .attribution {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 1.1rem;
   text-align: center;
+  grid-column: 1/-1;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
